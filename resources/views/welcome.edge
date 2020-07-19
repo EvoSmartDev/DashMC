@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   {{-- Styling --}}
+  {{{ encoreLink('tailwind') }}}
   {{{ encoreLink('css/app') }}}
 
   {{-- Scripting --}}
@@ -15,7 +16,7 @@
 
   <main>
     <div>
-      <h1 class="title"> It Works! </h1>
+      <h1 class="title text-purple-600">It Works!</h1>
       <p class="subtitle">
         Congratulations, you have just created the first DashMC app.
       </p>
@@ -34,7 +35,7 @@
         </li>
       </ul>
 
-      <button class="test" type="button">Test</button>
+      <button class="test bg-purple-600 px-4 py-2 rounded-md text-white mt-4 hover:bg-purple-500" type="button">Test</button>
     </div>
   </main>
 </body>

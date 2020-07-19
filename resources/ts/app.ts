@@ -5,6 +5,6 @@
 
 const testButton = document.querySelector('.test')
 
-testButton.addEventListener('click', e => {
+testButton.addEventListener('click', () => {
   alert('click')
 })

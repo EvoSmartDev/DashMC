@@ -10,6 +10,7 @@ Encore
   .setOutputPath('public/build/')
   .setPublicPath('/build')
   .addEntry('js/app', './resources/ts/app.ts')
+  .addStyleEntry('tailwind', './resources/tailwind.css')
   .addStyleEntry('css/app', './resources/scss/app.scss')
   .splitEntryChunks()
   .enableSingleRuntimeChunk()
@@ -19,6 +20,7 @@ Encore
   .enableVersioning(Encore.isProduction())
   .enableIntegrityHashes(Encore.isProduction())
   .enableSassLoader()
+  .enablePostCssLoader()
   .enableTypeScriptLoader()
 
 module.exports = Encore.getWebpackConfig()
