@@ -20,4 +20,5 @@
 
 import Route from '@ioc:Adonis/Core/Route'
 
-Route.on('/').render('welcome')
+Route.on('/').render('pages/welcome')
+Route.on('/about').render('pages/about', { title: 'About Us' })

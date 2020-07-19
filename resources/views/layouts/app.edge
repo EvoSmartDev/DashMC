@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{-- Styling --}}
+    {{{ encoreLink('tailwind') }}}
+    {{{ encoreLink('css/app') }}}
+  
+    {{-- Scripting --}}
+    {{{ encoreScript('js/app') }}}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title ? title : 'DashMC' }}</title>
+</head>
+<body>
+  <header class="container mx-auto">
+    <nav class="pt-8">
+      <ul class="flex space-x-4">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    @section('content')
+    @endsection
+  </main>
+</body>
+</html>
